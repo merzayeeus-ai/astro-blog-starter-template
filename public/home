@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 2026 MASTER SEO FRAMEWORK -->
+    <title>Roof Express | #1 Diamond Certified Roofing San Francisco & San Jose</title>
+    <meta name="description" content="The Bay Area's premier Triple-Certified roofing authority. Diamond Certified & Master Elite experts in Asphalt Shingles, Flat Roofing, and Storm Restoration. Serving SF, SJ & the Peninsula.">
+    <meta name="keywords" content="Roofing Contractor Bay Area, San Francisco Roofer, San Jose Roofing Company, Diamond Certified Roofing, GAF Master Elite California, Best Roofers Peninsula, Roof Express, Asphalt Shingle Replacement, Flat Roof Repair SF, Silicon Valley Roofing">
+    
+    <!-- TAILWIND & BRANDING -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: '#0F172A',
+                        brandOrange: '#EA580C',
+                        brandBlue: '#1E40AF',
+                        brandGrey: '#F8FAFC',
+                        whatsappGreen: '#25D366',
+                        googleBlue: '#4285F4',
+                        yelpRed: '#FF1A1A',
+                        diamondGold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Montserrat', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- 2026 MULTI-ENTITY SCHEMA (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Roof Express",
+      "url": "https://roof-ex.com",
+      "logo": "https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/blob-27af9cd.png/:/rs=w:214,h:103,cg:true,m/cr=w:214,h:103/qt=q:95",
+      "telephone": "+1-650-666-5554",
+      "image": "https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/7-b4c589f.jpg/:/rs=w:1280,h:960",
+      "priceRange": "$$",
+      "description": "The Bay Area's only Triple-Certified Diamond Certified roofing contractor. Specializing in high-performance residential and commercial systems.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "58 West Portal Avenue",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94127",
+        "addressCountry": "US"
+      },
+      "award": ["Diamond Certified 2026", "GAF Master Elite", "Owens Corning Platinum", "CertainTeed Select ShingleMaster"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "624"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "San Francisco"},
+        {"@type": "City", "name": "San Jose"},
+        {"@type": "City", "name": "Oakland"},
+        {"@type": "City", "name": "Palo Alto"},
+        {"@type": "City", "name": "Fremont"}
+      ]
+    }
+    </script>
+
+    <style>
+        /* Video Background Hero */
+        .hero-master {
+            position: relative;
+            overflow: hidden;
+            background-color: #0F172A;
+            min-height: 90vh;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 56.25vw; /* 16:9 Aspect Ratio */
+            min-height: 100vh;
+            min-width: 177.77vh; /* 16:9 Aspect Ratio */
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.95));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+        }
+
+        .nav-link { @apply text-xs font-black uppercase tracking-widest text-brandNavy hover:text-brandOrange transition duration-300; }
+        .feature-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .feature-card:hover { transform: translateY(-12px); box-shadow: 0 40px 80px -15px rgba(15, 23, 42, 0.2); }
+        
+        .spec-table th { background: #0F172A; color: white; padding: 1.5rem; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.15em; }
+        .spec-table td { padding: 1.5rem; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .area-link { @apply block p-4 bg-white rounded-xl border border-gray-100 font-bold text-brandNavy hover:border-brandOrange hover:text-brandOrange transition shadow-sm text-center text-sm; }
+    </style>
+</head>
+<body class="bg-white font-sans text-brandNavy selection:bg-brandOrange selection:text-white pb-24 md:pb-0">
+
+    <!-- URGENCY TOP BAR -->
+    <div class="bg-brandNavy text-white py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] sticky top-0 z-[100] border-b border-white/5">
+        <span class="text-brandOrange animate-pulse mr-2">●</span> 24/7 Storm Response Units Active Across All 9 Bay Area Counties
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="bg-white/95 backdrop-blur py-4 sticky top-[34px] z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/blob-27af9cd.png/:/rs=w:214,h:103,cg:true,m/cr=w:214,h:103/qt=q:95" alt="Roof Express Logo" class="h-14 w-auto object-contain">
+            </a>
+            <nav class="hidden lg:flex items-center gap-10">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">Our Method</a>
+                <a href="#coverage" class="nav-link">Service Areas</a>
+                <a href="#verified" class="nav-link">Reviews</a>
+                <div class="h-6 w-px bg-gray-200"></div>
+                <a href="tel:6506665554" class="bg-brandNavy text-white px-8 py-3 rounded-full font-black text-sm hover:bg-brandOrange transition shadow-lg uppercase tracking-widest">
+                    <i class="fas fa-phone-alt mr-2"></i> 650-666-5554
+                </a>
+            </nav>
+            <a href="tel:6506665554" class="lg:hidden text-brandNavy text-2xl"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION: BIG IMPRESSION -->
+    <section class="hero-master text-white py-32 lg:py-56 px-4 flex items-center">
+        <!-- Video Layer -->
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/1075538792?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <!-- Gradient Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Foreground Content -->
+        <div class="container mx-auto max-w-6xl hero-content text-center">
+            <div class="inline-flex items-center bg-white/10 backdrop-blur border border-white/20 px-6 py-2 rounded-full mb-12 hover:bg-white/20 transition cursor-pointer">
+                <span class="text-xs font-black uppercase tracking-[0.4em] text-brandOrange"><i class="fas fa-gem mr-3"></i> Diamond Certified & Master Elite</span>
+            </div>
+            <h1 class="text-6xl md:text-[10rem] font-black mb-10 leading-[0.85] tracking-tighter uppercase italic">
+                Roofing <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange via-yellow-400 to-yellow-600">Reimagined</span>
+            </h1>
+            <p class="text-xl md:text-3xl text-slate-200 max-w-4xl mx-auto mb-16 leading-relaxed font-medium">
+                The only **Triple-Platinum** certified contractor in Northern California. 
+                Same-day drone audits and 50-year system warranties for the Silicon Valley elite.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <a href="https://clienthub.getjobber.com/hubs/fadfd1d3-6aef-4c07-a4c9-58294a0539f2/public/requests/447045/new?source=social_media" target="_blank" class="w-full md:w-auto bg-brandOrange text-white px-16 py-7 rounded-2xl font-black text-2xl hover:scale-105 transition-all duration-300 shadow-[0_20px_50px_rgba(234,88,12,0.4)] uppercase tracking-widest">
+                    Request Fast Quote
+                </a>
+                <div class="flex items-center gap-6">
+                    <div class="text-left hidden md:block">
+                        <p class="text-[10px] font-black uppercase tracking-widest text-brandOrange">Master Dispatch</p>
+                        <p class="text-2xl font-black">650-666-5554</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ELITE CERTIFICATION BAR -->
+    <section class="py-20 bg-white border-b border-gray-100 overflow-hidden">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-[10px] font-black uppercase tracking-[0.6em] text-slate-300 mb-12">The 1% Standard of Excellence</p>
+            <div class="flex flex-wrap justify-center items-center gap-16 md:gap-32 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-1000">
+                <span class="text-3xl font-black text-brandNavy tracking-tighter italic">GAF MASTER ELITE®</span>
+                <span class="text-3xl font-black text-brandOrange tracking-tighter italic">DIAMOND CERTIFIED®</span>
+                <span class="text-3xl font-black text-brandNavy tracking-tighter italic">OWENS CORNING®</span>
+                <span class="text-3xl font-black text-brandNavy tracking-tighter italic uppercase underline decoration-brandOrange decoration-8">CSLB #1072766</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PROTECTION SYSTEMS -->
+    <section id="services" class="py-32 bg-brandGrey">
+        <div class="container mx-auto px-4 max-w-7xl relative text-center">
+            <div class="mb-24">
+                <h2 class="text-5xl md:text-7xl font-black text-brandNavy uppercase italic mb-8">Total Protection <span class="text-brandOrange">Systems</span></h2>
+                <p class="text-slate-500 font-bold uppercase tracking-[0.3em] text-xs">Engineering Beyond the Shingle</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Residential Elite -->
+                <div class="feature-card bg-white p-12 rounded-[4rem] shadow-sm border-t-8 border-brandOrange flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 bg-brandOrange/10 rounded-[2rem] flex items-center justify-center mb-10 text-brandOrange text-4xl">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-brandNavy mb-6 uppercase italic text-left">Residential</h3>
+                        <p class="text-base text-slate-500 leading-relaxed mb-10 text-left">
+                            Master-grade shingle systems for SF Victorians and Silicon Valley estates. Specialized in Title 24 compliance and 130 MPH wind defense.
+                        </p>
+                    </div>
+                    <ul class="text-left space-y-3 mb-10">
+                        <li class="text-xs font-bold text-slate-400 flex items-center gap-2"><i class="fas fa-check text-brandOrange"></i> GAF Timberline HDZ®</li>
+                        <li class="text-xs font-bold text-slate-400 flex items-center gap-2"><i class="fas fa-check text-brandOrange"></i> 50-Year System Warranty</li>
+                    </ul>
+                    <a href="residential-roofing.html" class="bg-brandNavy text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-brandOrange transition">View Residential</a>
+                </div>
+
+                <!-- Flat & Modern Mastery -->
+                <div class="feature-card bg-white p-12 rounded-[4rem] shadow-sm border-t-8 border-brandBlue flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 bg-brandBlue/10 rounded-[2rem] flex items-center justify-center mb-10 text-brandBlue text-4xl">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-brandNavy mb-6 uppercase italic text-left">Flat Roofs</h3>
+                        <p class="text-base text-slate-500 leading-relaxed mb-10 text-left">
+                            The Bay Area's authority on Modified Bitumen and TPO systems. Engineered for 100% waterproofing on zero-slope architecture.
+                        </p>
+                    </div>
+                    <ul class="text-left space-y-3 mb-10">
+                        <li class="text-xs font-bold text-slate-400 flex items-center gap-2"><i class="fas fa-check text-brandBlue"></i> 2-Ply Heat-Weld Systems</li>
+                        <li class="text-xs font-bold text-slate-400 flex items-center gap-2"><i class="fas fa-check text-brandBlue"></i> Standing Water Guarantee</li>
+                    </ul>
+                    <a href="roof-repair.html" class="bg-brandNavy text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-brandBlue transition">View Flat Systems</a>
+                </div>
+
+                <!-- Commercial Scale -->
+                <div class="feature-card bg-white p-12 rounded-[4rem] shadow-sm border-t-8 border-brandNavy flex flex-col justify-between">
+                    <div>
+                        <div class="w-20 h-20 bg-brandNavy/10 rounded-[2rem] flex items-center justify-center mb-10 text-brandNavy text-4xl">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-brandNavy mb-6 uppercase italic text-left">Commercial</h3>
+                        <p class="text-base text-slate-500 leading-relaxed mb-10 text-left">
+                            Scalable reroofing for Tech Parks, HOAs, and Industrial hubs. Non-disruptive, rapid deployment tailored for B2B.
+                        </p>
+                    </div>
+                    <ul class="text-left space-y-3 mb-10">
+                        <li class="text-xs font-bold text-slate-400 flex items-center gap-2"><i class="fas fa-check text-brandNavy"></i> $2M+ Liability Insurance</li>
+                        <li class="text-xs font-bold text-slate-400 flex items-center gap-2"><i class="fas fa-check text-brandNavy"></i> Professional Fleet Support</li>
+                    </ul>
+                    <a href="contact.html" class="bg-brandNavy text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-brandOrange transition">Asset Management</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE "EXPRESS" METHODOLOGY (AUTHORITY SECTION) -->
+    <section id="process" class="py-32 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col lg:flex-row gap-24 items-center">
+                <div class="lg:w-1/2 text-left">
+                    <span class="bg-brandOrange text-white text-[10px] font-black uppercase px-4 py-1.5 rounded-full mb-8 inline-block tracking-[0.2em]">Our Scientific Approach</span>
+                    <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-10 leading-tight">The <span class="text-brandOrange italic">Express</span> <br>Methodology</h2>
+                    <p class="text-slate-500 text-lg mb-12 font-medium leading-loose">
+                        We eliminated the friction of traditional roofing. By integrating drone-based forensic mapping with our "Strike-Team" dispatch, we deliver precision results 3x faster than standard contractors.
+                    </p>
+                    <div class="space-y-10">
+                        <div class="flex gap-8 group">
+                            <div class="text-5xl font-black text-slate-100 group-hover:text-brandOrange transition duration-500">01</div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 uppercase">Forensic Digital Audit</h4>
+                                <p class="text-sm text-slate-500">We utilize 4K drone imagery to map every complex valley and penetration without walking on fragile shingles.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 group">
+                            <div class="text-5xl font-black text-slate-100 group-hover:text-brandOrange transition duration-500">02</div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 uppercase">Surgical Tear-Off</h4>
+                                <p class="text-sm text-slate-500">Total removal of old layers down to the deck to expose hidden dry rot caused by Bay Area fog cycles.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 group">
+                            <div class="text-5xl font-black text-slate-100 group-hover:text-brandOrange transition duration-500">03</div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 uppercase">System Fusion</h4>
+                                <p class="text-sm text-slate-500">Multi-layer defense: synthetic barriers, starter strips, and high-performance cladding matched for your microclimate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="bg-brandNavy p-4 rounded-[4rem] shadow-2xl overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80" alt="Master Elite Installation" class="rounded-[3.5rem] w-full transform group-hover:scale-110 transition duration-1000 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandNavy to-transparent"></div>
+                    </div>
+                    <!-- Floating Stat Badge -->
+                    <div class="absolute -bottom-10 -left-10 bg-brandOrange text-white p-10 rounded-[3rem] shadow-2xl text-center">
+                        <p class="text-5xl font-black mb-1">3-5</p>
+                        <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Day Completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MATERIAL ROI ANALYSIS (SEO RICH DATA) -->
+    <section class="py-24 bg-brandGrey border-t border-b border-gray-200">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-brandNavy uppercase italic mb-4">Investment <span class="text-brandOrange">ROI Matrix</span></h2>
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] text-center">Data-Driven Selection for 2026 Resale Value</p>
+            </div>
+            
+            <div class="overflow-x-auto rounded-[3rem] shadow-2xl border border-gray-100 bg-white">
+                <table class="w-full spec-table text-left">
+                    <thead>
+                        <tr>
+                            <th>System Type</th>
+                            <th>Warranty</th>
+                            <th>Title 24 Rating</th>
+                            <th>Market ROI</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-600">
+                        <tr>
+                            <td class="font-bold italic">Designer Asphalt</td>
+                            <td>50 Years</td>
+                            <td class="font-bold text-green-600 uppercase text-[10px]">Premium Cool</td>
+                            <td class="font-black text-brandNavy">65% Immediate</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold italic">Elite TPO Membrane</td>
+                            <td>30 Years</td>
+                            <td class="font-bold text-green-600 uppercase text-[10px]">Max Efficiency</td>
+                            <td class="font-black text-brandNavy">High (B2B)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold italic">Modified Bitumen</td>
+                            <td>25 Years</td>
+                            <td class="font-bold text-slate-400 uppercase text-[10px]">Reflective Cap</td>
+                            <td class="font-black text-brandNavy">Reliable (SF-7x7)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold italic">Concrete Restoration</td>
+                            <td>50+ Years</td>
+                            <td class="font-bold text-slate-400 uppercase text-[10px]">High Thermal</td>
+                            <td class="font-black text-brandNavy">Estate-Value</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE AREA AUTHORITY HUB (CITY LINKS) -->
+    <section id="coverage" class="py-32 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-black text-brandNavy uppercase italic mb-6">Bay Area <span class="text-brandOrange">Authority</span></h2>
+                <p class="text-slate-500 font-bold uppercase tracking-[0.3em] text-xs">Localized Engineering for Nine Counties</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <a href="san-francisco-roofing.html" class="area-link">San Francisco</a>
+                <a href="san-jose-roofing.html" class="area-link">San Jose</a>
+                <a href="oakland-roofing.html" class="area-link">Oakland</a>
+                <a href="palo-alto-roofing.html" class="area-link">Palo Alto</a>
+                <a href="mountain-view-roofing.html" class="area-link">Mountain View</a>
+                <a href="sunnyvale-roofing.html" class="area-link">Sunnyvale</a>
+                <a href="redwood-city-roofing.html" class="area-link">Redwood City</a>
+                <a href="san-mateo-roofing.html" class="area-link">San Mateo</a>
+                <a href="fremont-roofing.html" class="area-link">Fremont</a>
+                <a href="hayward-roofing.html" class="area-link">Hayward</a>
+                <a href="berkeley-roofing.html" class="area-link">Berkeley</a>
+                <a href="san-bruno-roofing.html" class="area-link">San Bruno</a>
+                <a href="foster-city-roofing.html" class="area-link">Foster City</a>
+                <a href="south-san-francisco-roofing.html" class="area-link">South SF</a>
+                <a href="pacifica-roofing.html" class="area-link">Pacifica</a>
+                <a href="atherton-roofing.html" class="area-link">Atherton</a>
+                <a href="brisbane-roofing.html" class="area-link">Brisbane</a>
+                <a href="albany-roofing.html" class="area-link">Albany</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VERIFY OUR REPUTATION (TRUST HUB) -->
+    <section id="verified" class="py-32 bg-brandNavy text-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl font-black uppercase tracking-tight mb-8 italic">Verified <span class="text-brandOrange">Authority</span></h2>
+                <p class="text-slate-400 font-bold uppercase tracking-[0.4em] text-xs">Transparency is Our Core Value</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Diamond Certified Card -->
+                <div class="glass-panel p-12 rounded-[4rem] border-t-8 border-diamondGold group hover:-translate-y-4 transition-all duration-500">
+                    <div class="flex justify-between items-start mb-10">
+                        <i class="fas fa-gem text-5xl text-diamondGold group-hover:scale-125 transition"></i>
+                        <span class="bg-brandOrange text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">AEO Verified</span>
+                    </div>
+                    <h3 class="text-3xl font-black mb-4 uppercase italic">Diamond Certified</h3>
+                    <p class="text-sm text-slate-400 mb-10 leading-loose">
+                        The ultimate credential. Independently audited for highest customer satisfaction and quality standards in California.
+                    </p>
+                    <a href="https://www.diamondcertified.org/report/roof-express/" target="_blank" class="block w-full bg-white text-brandNavy text-center py-5 rounded-2xl font-black hover:bg-brandOrange hover:text-white transition uppercase text-xs tracking-widest">
+                        View Official Report
+                    </a>
+                </div>
+
+                <!-- Google Maps Card -->
+                <div class="glass-panel p-12 rounded-[4rem] border-t-8 border-googleBlue group hover:-translate-y-4 transition-all duration-500 text-left">
+                    <div class="flex justify-between items-start mb-10 text-left">
+                        <i class="fab fa-google text-5xl text-googleBlue group-hover:scale-125 transition"></i>
+                        <div class="flex text-brandOrange text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-3xl font-black mb-4 uppercase italic text-left">Google Profile</h3>
+                    <p class="text-sm text-slate-400 mb-10 leading-loose text-left">
+                        Explore hundreds of verified project photos across San Francisco, San Jose, and the Peninsula. 4.9 Star Rating.
+                    </p>
+                    <a href="https://www.google.com/maps?cid=13257844389379386946" target="_blank" class="block w-full bg-white text-brandNavy text-center py-5 rounded-2xl font-black hover:bg-googleBlue hover:text-white transition uppercase text-xs tracking-widest text-left text-center">
+                        Open Google Maps
+                    </a>
+                </div>
+
+                <!-- Yelp Card -->
+                <div class="glass-panel p-12 rounded-[4rem] border-t-8 border-yelpRed group hover:-translate-y-4 transition-all duration-500 text-left">
+                    <div class="flex justify-between items-start mb-10 text-left">
+                        <i class="fab fa-yelp text-5xl text-yelpRed group-hover:scale-125 transition text-left"></i>
+                        <span class="bg-white/10 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest text-left">Community Choice</span>
+                    </div>
+                    <h3 class="text-3xl font-black mb-4 uppercase italic text-left">Yelp Reviews</h3>
+                    <p class="text-sm text-slate-400 mb-10 leading-loose text-left">
+                        Read unfiltered experiences from your actual neighbors. Top-rated for communication, speed, and fair Bay Area pricing.
+                    </p>
+                    <a href="https://www.yelp.com/biz/roof-express-san-francisco" target="_blank" class="block w-full bg-white text-brandNavy text-center py-5 rounded-2xl font-black hover:bg-yelpRed hover:text-white transition uppercase text-xs tracking-widest text-left text-center">
+                        Read Yelp Reviews
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTER CALL TO ACTION -->
+    <section id="quote" class="py-40 bg-brandOrange text-white text-center relative overflow-hidden">
+        <!-- Floating Logo Accent -->
+        <div class="absolute -right-20 -bottom-20 opacity-10 grayscale brightness-200">
+            <img src="https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/blob-27af9cd.png/:/rs=w:214,h:103,cg:true,m/cr=w:214,h:103/qt=q:95" alt="Logo Accent" class="w-[600px]">
+        </div>
+
+        <div class="container mx-auto px-4 max-w-4xl relative z-10">
+            <h2 class="text-5xl md:text-9xl font-black mb-12 uppercase tracking-tighter italic">Defend Your <br><span class="text-brandNavy">Property</span></h2>
+            <p class="text-2xl opacity-90 mb-20 font-medium max-w-2xl mx-auto">Free forensic drone audits and same-day digital quotes for Bay Area property owners.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <a href="https://clienthub.getjobber.com/hubs/fadfd1d3-6aef-4c07-a4c9-58294a0539f2/public/requests/447045/new?source=social_media" target="_blank" class="bg-brandNavy text-white px-20 py-8 rounded-[2rem] font-black text-3xl hover:scale-105 transition-all duration-300 shadow-2xl uppercase tracking-widest">
+                    Start Now
+                </a>
+                <a href="https://wa.me/16503032161" target="_blank" class="flex-1 bg-whatsappGreen text-white px-12 py-8 rounded-[2rem] font-black text-2xl hover:scale-105 transition shadow-2xl uppercase tracking-wide flex items-center justify-center gap-4">
+                    <i class="fab fa-whatsapp text-4xl"></i> WhatsApp Dispatch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTER FOOTER -->
+    <footer class="bg-brandNavy text-white py-32 px-4 border-t border-white/10">
+        <div class="container mx-auto max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-20 mb-24 text-left">
+                <div class="md:col-span-2 text-left">
+                    <img src="https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/blob-27af9cd.png/:/rs=w:214,h:103,cg:true,m/cr=w:214,h:103/qt=q:95" alt="Roof Express Logo" class="h-16 w-auto brightness-0 invert mb-12 text-left">
+                    <p class="text-slate-400 text-lg max-w-md leading-relaxed mb-12 text-left">
+                        The Bay Area's definitive Diamond Certified authority for high-performance roofing systems. Serving San Francisco to San Jose with master craftsmanship.
+                    </p>
+                    <div class="flex gap-8 text-left">
+                        <a href="https://www.facebook.com/roof.exp/" target="_blank" class="text-slate-400 hover:text-brandOrange transition text-3xl text-left"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/roof_exp/" target="_blank" class="text-slate-400 hover:text-brandOrange transition text-3xl text-left"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@Roof-Express" target="_blank" class="text-slate-400 hover:text-brandOrange transition text-3xl text-left"><i class="fab fa-youtube text-left"></i></a>
+                        <a href="https://www.tiktok.com/@roof.express" target="_blank" class="text-slate-400 hover:text-brandOrange transition text-3xl text-left"><i class="fab fa-tiktok text-left"></i></a>
+                    </div>
+                </div>
+                <div class="text-left text-left">
+                    <h4 class="font-black uppercase tracking-[0.2em] text-xs text-brandOrange mb-10 text-left">Core Capabilities</h4>
+                    <ul class="space-y-6 text-sm font-black uppercase tracking-widest text-left">
+                        <li><a href="residential-roofing.html" class="hover:text-brandOrange transition">Residential Shingle</a></li>
+                        <li><a href="roof-repair.html" class="hover:text-brandOrange transition">Flat Roof Mastery</a></li>
+                        <li><a href="gallery.html" class="hover:text-brandOrange transition">Project Gallery</a></li>
+                        <li><a href="financing.html" class="hover:text-brandOrange transition">0% Financing</a></li>
+                        <li><a href="skylights.html" class="hover:text-brandOrange transition">Health Audits</a></li>
+                    </ul>
+                </div>
+                <div class="text-left text-left text-left">
+                    <h4 class="font-black uppercase tracking-[0.2em] text-xs text-brandOrange mb-10 text-left">HQ Operations</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8 text-left text-left">
+                        58 West Portal Avenue<br>
+                        San Francisco, CA 94127
+                    </p>
+                    <a href="tel:6506665554" class="text-3xl font-black hover:text-brandOrange transition text-left text-left">650-666-5554</a>
+                    <p class="text-xs font-bold text-slate-500 mt-4 uppercase tracking-widest text-left text-left text-left text-left text-left">Open 24/7 For Emergencies</p>
+                </div>
+            </div>
+            
+            <div class="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
+                <p class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.4em]">
+                    &copy; 2026 Roof Express. CSLB License #1072766 • Fully Insured & Bonded • Diamond Certified Authority
+                </p>
+                <div class="flex items-center gap-10 grayscale opacity-40">
+                    <img src="https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/bbb-logo.png" alt="BBB" class="h-8">
+                    <img src="https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/gaf-logo.png" alt="GAF" class="h-10">
+                    <img src="https://img1.wsimg.com/isteam/ip/568bedcb-0534-4bab-b216-559e667e598e/oc-logo.png" alt="Owens Corning" class="h-8">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY (HIDDEN ON DESKTOP) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 lg:hidden flex gap-2 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] text-left text-left">
+        <a href="tel:6506665554" class="flex-1 bg-brandNavy text-white text-center py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center text-left">
+            <i class="fas fa-phone mr-2"></i> Call Now
+        </a>
+        <a href="https://wa.me/16503032161" target="_blank" class="flex-1 bg-whatsappGreen text-white text-center py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center text-left">
+            <i class="fab fa-whatsapp mr-2 text-left"></i> WhatsApp
+        </a>
+        <a href="https://clienthub.getjobber.com/hubs/fadfd1d3-6aef-4c07-a4c9-58294a0539f2/public/requests/447045/new?source=social_media" target="_blank" class="flex-1 bg-brandOrange text-white text-center py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center text-left text-left">
+            <i class="fas fa-calendar-check mr-2 text-left"></i> Quote
+        </a>
+    </div>
+
+</body>
+</html>
